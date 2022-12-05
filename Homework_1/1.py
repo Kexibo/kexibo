@@ -12,14 +12,15 @@ def numberOfSteps(num: int) -> int:
             #Условие четное не четное
             if num % 2 == 0:
                 #Куча переменных для вывода в принты как в примерах
-                h = num // 2
+                h = num / 2
                 print(f'Step {x}) {num} is even; divide by 2 and obtain {h}. ')
-                x =+ 1
+                x += 1
                 num = h
             else:
                 h = num - 1
                 print(f'Step {x}) {num} odd; subtract 1 and obtain {h}. ')
-                x =+ 1
+                x += 1
                 num = h
+        return x-1
 
-numberOfSteps(14)
+print(numberOfSteps(14))

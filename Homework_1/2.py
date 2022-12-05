@@ -27,6 +27,6 @@ def numberOfMatches(n: int) -> int:
                 print(f'- {x}st Round: Teams = {n}, Matches = {f}, and {h} teams advance.')
                 n = h
         g += f
-    return g
+    return int(g)
 
-numberOfMatches(7)
+print(numberOfMatches(7))
